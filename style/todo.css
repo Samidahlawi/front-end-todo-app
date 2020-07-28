@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Dubai-Regular';
+  src: url("../dubai-cufonfonts/Dubai-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Dubai-Medium';
+  src: url("../dubai-cufonfonts/Dubai-Regular.ttf");
+}
+
+.title {
+  font-family: "Dubai-Medium";
+  color: #30394A;
+}
+
+.sub-title > h3 {
+  color: #666666;
+  font-family: "Dubai-Regular";
+  font-size: 18px;
+}
+
+.sub-btn h4 {
+  font-family: "Dubai-Medium";
+}
+
+.user-account h6 {
+  font-family: "Dubai-Medium";
+}
+/*# sourceMappingURL=todo.css.map */

@@ -1,0 +1,48 @@
+@font-face { 
+    font-family: 'Dubai-Regular';
+    src: url('../dubai-cufonfonts/Dubai-Regular.ttf');
+}
+@font-face { 
+font-family: 'Dubai-Medium';
+src: url('../dubai-cufonfonts/Dubai-Regular.ttf');
+}
+
+
+//Primary colors
+$titleColor : #30394A;
+$fontFamilyOfTitle : "Dubai-Medium";
+
+//Text colors
+$todoTextColor : #666666;
+
+
+// font-family
+$sidebarFontFamily : 'Dubai-Medium';
+$todoFontFamily : 'Dubai-Regular';
+$userFontFamily : 'Dubai-Medium';
+
+// make the font-style the same for all h4 in nav
+.title{
+    font-family: $fontFamilyOfTitle ;
+    color: $titleColor;
+}
+
+
+
+.sub-title > h3 {
+    color: $todoTextColor;
+    font-family: $todoFontFamily;
+    font-size: 18px;
+
+}
+
+
+.sub-btn  h4{
+    font-family: $sidebarFontFamily ;
+}
+
+
+.user-account h6{
+    font-family: $userFontFamily;
+}
+
