@@ -18,14 +18,14 @@
 
 
             <!-- START sidebar  HERE-->
-            <div class="sidebar">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light sidebar ">
+            <div class="sidebar" id="sidebar">
+                <nav id="navbar"class="navbar navbar-expand-lg navbar-light bg-light sidebar ">
                     <div class="d-flex flex-sm-row justify-content-between w-100">
                         <img src="./assets/logo.png" alt="ATM" class="navbar-brand logo">
                         <button class="navbar-toggler close-sidebar" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="icon-close"></div>
+                        <div class="icon-close" id="close-sidebar" onclick="closeSideBar()"></div>
                     </div>
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto w-100 flex-column">
@@ -91,7 +91,7 @@
             <main>
 
                 <!-- START header  HERE-->
-                <header class="header">
+                <header class="header" id="header">
                     <div class="sub-header">
                         <select class="form-control task-field" name="tasks" id="tasks">
                             <option value="جميع المهام">جميع المهام</option>
@@ -347,6 +347,8 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <!-- the link to main.js file  -->
+        <script src="./javascript/main.js"></script>
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js" integrity="sha384-a9xOd0rz8w0J8zqj1qJic7GPFfyMfoiuDjC9rqXlVOcGO/dmRqzMn34gZYDTel8k" crossorigin="anonymous"></script>
     </body>
