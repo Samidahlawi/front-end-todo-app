@@ -4,7 +4,7 @@
     <title>icon-arrow-down-small-dark</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <filter x="-0.8%" y="-7.8%" width="101.7%" height="121.9%" filterUnits="objectBoundingBox" id="filter-1">
+        <filter x="-0.8%" y="-7.8%" width="16px" height="16px" filterUnits="objectBoundingBox" id="filter-1">
             <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
             <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
             <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
@@ -22,9 +22,9 @@
                     <mask id="mask-3" fill="white">
                         <use xlink:href="#path-2"></use>
                     </mask>
-                    <use id="Shape" fill="#000000" fill-rule="nonzero" xlink:href="#path-2"></use>
+                    <use id="Shape" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-2"></use>
                     <g id="🎨-color" mask="url(#mask-3)" fill="#273648">
-                        <g transform="translate(-7.000000, -10.000000)" id="rectangle">
+                        <g transform="translate(7.000000, 10.000000)" id="rectangle">
                             <rect x="0" y="0" width="24" height="24"></rect>
                         </g>
                     </g>
