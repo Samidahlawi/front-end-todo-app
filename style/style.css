@@ -29,7 +29,7 @@ body{
     position: relative;
 }
 .sub-btn  h4{
-    font-family: Dubai-Medium;
+   
     font-size: 18px;
     color: #EDF4FC;
     margin: 0 10px 0 0;
@@ -99,7 +99,6 @@ body{
 .user-account h6{
     width: 69px;
     height: 18px;
-    font-family: Dubai-Medium;
     font-size: 11px;
     color: rgba(237,244,252,0.50);
     margin: 0;
@@ -184,9 +183,8 @@ main {
 }
 .title{
     height: 34px;
-    font-family: Dubai-Medium;
     font-size: 20px;
-    color: #30394A;
+   
     margin-bottom: 8px;
 }
 .section {
@@ -229,7 +227,6 @@ main {
 }
 
 .sub-title > h3 {
-    font-family: Dubai-Regular;
     font-size: 18px;
     color: #666666;
     font-family: Dubai-Regular;
