@@ -6,40 +6,83 @@
         <meta http-equiv="X-UA-Compatible" content="IE=9">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Todo</title>
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css" integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style/style.css">
     </head>
 
     <body>
         <!-- START container  HERE-->
-        <div class="container">
+        <div class="todo-container">
 
 
             <!-- START sidebar  HERE-->
-            <nav class="sidebar">
-                <div>
-                    <h2>TAM</h2>
-                    <div class="close-sidebar">x</div>
-                </div>
-                <div>
-                    <ul>
-                        <li><a href="#"><i class=""></i>المهام</a></li>
-                        <li><a href="#"><i class=""></i>الأعضاء</a></li>
-                        <li><a href="#"><i class=""></i>الدفع و الفواتير</a></li>
-                        <li><a href="#"><i class=""></i>إعدادات</a></li>
-                    </ul>
-                    <div>
-                        <div>
-                            <img src="" alt="">
+            <div class="sidebar">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light sidebar ">
+                    <div class="d-flex flex-sm-row justify-content-between w-100">
+                        <img src="./assets/logo.png" alt="ATM" class="navbar-brand logo">
+                        <button class="navbar-toggler close-sidebar" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="icon-close"></div>
+                    </div>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto w-100 flex-column">
+                            <li class="sub-btn active">
+                                <a href="#">
+                                <div class="icon-list "></div>
+                                 <div>
+                                     <h4>المهام</h4>
+                                 </div>
+                                 <div class="icon-arrow-left"></div>
+                                </a>
+                             </li>
+
+                             <li class="sub-btn">
+                                <a href="#">
+                                 <div class="icon-user"></div>
+                                 <div>
+                                     <h4>الأعضاء</h4>
+                                 </div>
+                                </a>
+                             </li>
+                             
+                             <li class="sub-btn">
+                                <a href="#">
+                                 <div class="icon-credit"></div>
+                                 <div>
+                                     <h4>الدفع والفواتير</h4>
+                                 </div>
+                                </a>
+                             </li>
+
+                             <li class="sub-btn">
+                                <a href="#">
+                                 <div class="icon-settings"></div>
+                                 <div>
+                                     <h4>إعدادات</h4>
+                                 </div>
+                                </a>
+                             </li>
+
+                        </ul>
+
+                        <div class="form-inline  user-account">
                             <div>
-                                <h4>محمد عبدالله</h4>
-                                <h6>الشركة المحدودة</h6>
+                                <img src="./assets/avatar.png" alt="profile-image" height="48px" width="48px">
+                                <div>
+                                    <h4>محمد عبدالله</h4>
+                                    <h6>الشركة المحدودة</h6>
+                                </div>
+                            </div>
+                            <div>
+                                <img class="icon-arrow-down" src="./assets/icon-arrow-down-small.png" alt="arrow-down">
                             </div>
                         </div>
-                        <div>
-                            <div>VvV</div>
-                        </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
             <!-- START sidebar  HERE-->
 
                         <!-- --- ---- --- --- --- -- -->
@@ -48,12 +91,12 @@
             <main>
 
                 <!-- START header  HERE-->
-                <header>
-                    <div>
-                        <select name="tasks" id="tasks">
+                <header class="header">
+                    <div class="sub-header">
+                        <select class="form-control task-field" name="tasks" id="tasks">
                             <option value="جميع المهام">جميع المهام</option>
                         </select>
-                        <input type="text" id="search" name="search"/>
+                        <input class="form-control search-field" type="text" id="search" name="search" placeholder="بحث"/>
                     </div>
                 </header>
                 <!-- END header HERE--> 
@@ -61,40 +104,233 @@
                         <!-- ---  -->
 
                 <!-- START section  HERE-->
-                <section class="section"> 
+                <section class="section "> 
                    
                     <!-- START todo  HERE-->
                     <div class="todo">
                         
                         <div>
-                            <h2>التصميم:</h2>
+                            <h2 class="title">التصميم:</h2>
                         </div>
 
 
                         <!-- START todo-info  HERE-->
                         <div class="todo-info">
-                            <div>
-                                <div>
-                                    <div>
-                                        <div>*</div>
+                            
+                            <div class="box">
+                                <div class="sub-box">
+                                    <div class="check"> 
+                                        <div class="icon-check"></div>
                                     </div>
-                                    <div>
-                                       <h3> تحويل التصميم الى HTML + CSS</h3>
+                                    <div class="sub-title">
+                                       <h3 style="text-decoration: line-through;"> تصميم الشكل العام وتجهيز المهام وتسليمه</h3>
                                     </div>
                                 </div>
                                 
-                                <div>
+                                <div class="none">
                                     <h5>CSS</h5>
                                 </div>
                             </div>
+
+                            <div class="box">
+                                <div class="sub-box">
+                                    <div class="check"> 
+                                        <div class="icon-uncheck"></div>
+                                    </div>
+                                    <div class="sub-title">
+                                       <h3>تحويل التصميم إلى HTML + CSS </h3>
+                                    </div>
+                                </div>
+                                
+                                <div class="type">
+                                    <h5>CSS</h5>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <div class="sub-box">
+                                    <div class="check"> 
+                                        <div class="icon-uncheck"></div>
+                                    </div>
+                                    <div class="sub-title">
+                                       <h3>جعل التصميم متجاوب مع المتصفحات الصغيرة (Responsive)</h3>
+                                    </div>
+                                </div>
+                                
+                                <div class="type">
+                                    <h5>CSS</h5>
+                                </div>
+                            </div>
+
+
+                            <div class="box">
+                                <div class="sub-box">
+                                    <div class="check"> 
+                                        <div class="icon-uncheck"></div>
+                                    </div>
+                                    <div class="sub-title">
+                                       <h3>جعل التصميم متوافق كحد أدنى مع IE9</h3>
+                                    </div>
+                                </div>
+                                
+                                <div class="type">
+                                    <h5>Browsers</h5>
+                                </div>
+                            </div>
+
+                             <div class="box">
+                                <div class="sub-box">
+                                    <div class="check"> 
+                                        <div class="icon-uncheck"></div>
+                                    </div>
+                                    <div class="sub-title">
+                                       <h3>استخدام SASS لجعل ألوان التصميم سهلة التغيير (Skin-able/Theme-able)</h3>
+                                    </div>
+                                </div>
+                                
+                                <div class="type">
+                                    <h5>SASS</h5>
+                                </div>
+                            </div>
+
                         </div>
                         <!-- END todo-info  HERE-->
 
 
                     </div>
+                    <!-- END todo  HERE-->
+
+
                     <!-- START todo  HERE-->
+                    <div class="todo">
+                        
+                        <div>
+                            <h2 class="title">تحسينات:</h2>
+                        </div>
 
 
+                        <!-- START todo-info  HERE-->
+                        <div class="todo-info">
+                            
+                            <div class="box">
+                                <div class="sub-box">
+                                    <div class="check"> 
+                                        <div class="icon-uncheck"></div>
+                                    </div>
+                                    <div class="sub-title">
+                                       <h3 >إمكانية إخفاء القائمة الجانبية</h3>
+                                    </div>
+                                </div>
+                                
+                               
+                            </div>
+
+                            <div class="box">
+                                <div class="sub-box">
+                                    <div class="check"> 
+                                        <div class="icon-uncheck"></div>
+                                    </div>
+                                    <div class="sub-title">
+                                       <h3>إمكانية تعليم المهام كمنتهية</h3>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+
+                            <div class="box">
+                                <div class="sub-box">
+                                    <div class="check"> 
+                                        <div class="icon-uncheck"></div>
+                                    </div>
+                                    <div class="sub-title">
+                                       <h3>التوافقية مع أجهزة اللمس</h3>
+                                    </div>
+                                </div>
+                                
+                               
+                            </div>
+
+
+                            <div class="box">
+                                <div class="sub-box">
+                                    <div class="check"> 
+                                        <div class="icon-uncheck"></div>
+                                    </div>
+                                    <div class="sub-title">
+                                       <h3>جعل التصميم متوافق كحد أدنى مع IE9</h3>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+
+                             <div class="box">
+                                <div class="sub-box">
+                                    <div class="check"> 
+                                        <div class="icon-uncheck"></div>
+                                    </div>
+                                    <div class="sub-title">
+                                       <h3>استخدام SASS لجعل ألوان التصميم سهلة التغيير (Skin-able/Theme-able)</h3>
+                                    </div>
+                                </div>
+                                
+                               
+                            </div>
+
+                        </div>
+                        <!-- END todo-info  HERE-->
+
+
+                        
+                    </div>
+                    <!-- END todo  HERE-->
+
+
+                    <!-- START todo  HERE-->
+                    <div class="todo">
+                        
+                        <div>
+                            <h2 class="title">أخرى:</h2>
+                        </div>
+
+
+                        <!-- START todo-info  HERE-->
+                        <div class="todo-info">
+                            
+                            <div class="box">
+                                <div class="sub-box">
+                                    <div class="check"> 
+                                        <div class="icon-uncheck"></div>
+                                    </div>
+                                    <div class="sub-title">
+                                       <h3>تسليم المشروع النهائي في git repository مع ملاحظة استخدام git-flow</h3>
+                                    </div>
+                                </div>
+                                
+                               
+                            </div>
+
+                            <div class="box">
+                                <div class="sub-box">
+                                    <div class="check"> 
+                                        <div class="icon-uncheck"></div>
+                                    </div>
+                                    <div class="sub-title">
+                                       <h3>إضافة لمساتك الخاصة في الأماكن التي تراها مناسبة مع ذكر سبب إضافتها.</h3>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+
+                        </div>   
+                        <!-- END todo-info  HERE-->
+
+
+                        
+                    </div>
+                    <!-- END todo  HERE-->
                 </section>
                 <!-- END section  HERE-->
 
@@ -106,6 +342,13 @@
 
         </div>
         <!-- END container  HERE-->
+
+        <!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js" integrity="sha384-a9xOd0rz8w0J8zqj1qJic7GPFfyMfoiuDjC9rqXlVOcGO/dmRqzMn34gZYDTel8k" crossorigin="anonymous"></script>
     </body>
 
 </html>
